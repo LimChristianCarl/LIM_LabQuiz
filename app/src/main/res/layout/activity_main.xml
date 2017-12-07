@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lim.lim_labquiz.MainActivity"
+    android:background="@drawable/bg11">
+
+    <TextView
+        android:id="@+id/tv_FamousQuotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Famous Quotes"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_FamousQuotes"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="AUTHOR:"/>
+
+    <EditText
+        android:id="@+id/et_Author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Author"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_Quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Author"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/tv_Author"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="QUOTE:" />
+
+    <EditText
+        android:id="@+id/et_Quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Quote"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="SAVE"
+        android:onClick="InternalStorage"/>
+
+    <Button
+        android:id="@+id/btn_Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="NEXT"
+        android:onClick="Next"/>
+</RelativeLayout>
